@@ -20,8 +20,6 @@ public class TestController {
     public String getString(){
         User user1 = testService.getUser();
         User user2 = testService.getUser();
-        System.out.println(user1 == null);
-        System.out.println(user2 == null);
         if(user1 != null || user2 != null){
             System.out.println(user1 == user2);
         }else{

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Scope;
 public class Config {
 
     @Bean(name = "user")
-    @Scope("prototype") // @Scope("prototype") 多例，默认单例
+    @Scope() // @Scope("prototype") 多例，默认单例
     public User getUser(){
         return new User();
     }

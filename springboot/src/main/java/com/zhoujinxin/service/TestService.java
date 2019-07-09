@@ -11,10 +11,9 @@ import org.springframework.stereotype.Service;
 public class TestService {
 
     @Autowired
-    public ApplicationContext ioc;
+    public User user;
 
     public User getUser(){
-        User user = (User)ioc.getBean("user");
         return user;
     }
 }
